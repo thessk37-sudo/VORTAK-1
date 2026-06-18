@@ -163,7 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.toggle('no-scroll');
         });
 
-        navLinks.forEach(link => {
+        const menuLinks = navMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileToggle.classList.remove('active');
                 navMenu.classList.remove('active');

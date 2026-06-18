@@ -1024,6 +1024,10 @@ section {
     transform: translateY(24px);
 }
 
+.mobile-menu-cta {
+    display: none;
+}
+
 @media (max-width: 1024px) {
     html {
         font-size: 15px;
@@ -1035,7 +1039,8 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .hero-content {
+    .hero-content,
+    .about-content {
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -1059,6 +1064,10 @@ section {
         gap: 42px;
     }
 
+    .values-list {
+        text-align: left;
+    }
+
     .contact-cards-grid {
         grid-template-columns: 1fr;
     }
@@ -1069,26 +1078,54 @@ section {
 
     .showcase-panel {
         gap: 20px;
+        text-align: center;
+    }
+
+    .showcase-copy p {
+        margin: 0 auto 24px;
+    }
+
+    .showcase-metrics {
+        text-align: left;
     }
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        height: 70px;
+    }
+
+    .nav-container {
+        padding: 0 18px;
+        height: 70px;
+    }
+
     .nav-menu {
         position: fixed;
-        top: 80px;
+        top: 70px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 70px);
         background: rgba(11, 15, 25, 0.98);
+        backdrop-filter: blur(16px);
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 40px;
+        justify-content: flex-start;
+        padding: 50px 24px;
+        gap: 28px;
         transition: left 0.4s ease;
+        overflow-y: auto;
     }
 
     .nav-menu.active {
         left: 0;
+    }
+
+    .mobile-menu-cta {
+        display: inline-flex;
+        width: 100%;
+        max-width: 240px;
+        margin-top: 10px;
     }
 
     .mobile-nav-toggle {
@@ -1109,6 +1146,11 @@ section {
 
     .nav-cta {
         display: none;
+    }
+
+    .hero-section {
+        padding-top: 120px;
+        min-height: auto;
     }
 
     .hero-actions,
@@ -1144,6 +1186,10 @@ section {
 
     .hero-card {
         padding: 24px;
+    }
+
+    .hero-orbit {
+        display: none;
     }
 
     .showcase-panel,
@@ -1182,6 +1228,58 @@ section {
     .footer-bottom {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .logo-v {
+        font-size: 1.45rem;
+    }
+
+    .logo-text {
+        font-size: 1.25rem;
+    }
+
+    .logo-sub {
+        font-size: 0.5rem;
+        letter-spacing: 0.22em;
+    }
+
+    .hero-title {
+        font-size: 2.1rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-description {
+        font-size: 0.92rem;
+    }
+
+    .value-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .value-icon {
+        margin-top: 0;
+        font-size: 1.8rem;
+    }
+
+    .hero-card {
+        padding: 20px;
+    }
+
+    .hero-card h3 {
+        font-size: 1.6rem;
     }
 }
 
