@@ -1239,7 +1239,7 @@ section {
     .process-card:hover,
     .contact-card-item:hover,
     .product-card:hover {
-        transform: none;
+        transform: none !important;
     }
 
     .floating-chip {
