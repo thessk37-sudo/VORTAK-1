@@ -584,8 +584,9 @@ section {
 .metric-card:hover,
 .process-card:hover,
 .contact-card-item:hover {
-    transform: translateY(-2px);
     border-color: var(--panel-border-strong);
+    box-shadow: 0 0 24px rgba(var(--primary-rgb), 0.15);
+    background: rgba(17, 24, 39, 0.82);
 }
 
 .tech-stat-card .card-icon,
@@ -732,8 +733,9 @@ section {
 }
 
 .product-card:hover {
-    transform: translateY(-4px);
     border-color: var(--panel-border-strong);
+    box-shadow: 0 0 32px rgba(var(--primary-rgb), 0.18);
+    background: rgba(17, 24, 39, 0.82);
 }
 
 .product-gallery {
