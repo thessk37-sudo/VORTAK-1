@@ -211,13 +211,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         gsap.timeline({ defaults: { ease: 'power3.out', duration: 0.9 } })
             .to('.hero-section .reveal-ready', {
-                y: 0,
                 opacity: 1,
-                stagger: 0.12,
-                clearProps: 'transform'
+                stagger: 0.12
             })
             .from('.hero-card-wrapper', {
-                y: 30,
                 opacity: 0,
                 rotation: -3,
                 duration: 1.1,
@@ -225,7 +222,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }, '-=0.9')
             .from('.floating-chip', {
                 opacity: 0,
-                y: 16,
                 stagger: 0.12
             }, '-=0.8');
 
@@ -237,10 +233,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     toggleActions: 'play none none none'
                 },
                 opacity: 1,
-                y: 0,
                 duration: 0.8,
-                ease: 'power2.out',
-                clearProps: 'transform'
+                ease: 'power2.out'
             });
         });
 

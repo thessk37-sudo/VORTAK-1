@@ -1019,7 +1019,6 @@ section {
 
 .reveal-ready {
     opacity: 0;
-    transform: translateY(24px);
 }
 
 .mobile-menu-cta {
