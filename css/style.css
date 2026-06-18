@@ -1233,12 +1233,12 @@ section {
         padding-right: 20px;
     }
 
-    .tech-stat-card:hover,
-    .value-item:hover,
-    .metric-card:hover,
-    .process-card:hover,
-    .contact-card-item:hover,
-    .product-card:hover {
+    .tech-stat-card:hover, .tech-stat-card:active, .tech-stat-card:focus,
+    .value-item:hover, .value-item:active, .value-item:focus,
+    .metric-card:hover, .metric-card:active, .metric-card:focus,
+    .process-card:hover, .process-card:active, .process-card:focus,
+    .contact-card-item:hover, .contact-card-item:active, .contact-card-item:focus,
+    .product-card:hover, .product-card:active, .product-card:focus {
         transform: none !important;
     }
 
