@@ -160,9 +160,17 @@ a {
     box-shadow: var(--glow-primary);
 }
 
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 34px rgba(0, 229, 255, 0.26);
+@media (hover: hover) {
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 34px rgba(0, 229, 255, 0.26);
+    }
+
+    .btn-secondary:hover,
+    .btn-outline:hover {
+        transform: translateY(-2px);
+        border-color: var(--primary);
+    }
 }
 
 .btn-secondary {
@@ -172,11 +180,6 @@ a {
     backdrop-filter: blur(10px);
 }
 
-.btn-secondary:hover,
-.btn-outline:hover {
-    transform: translateY(-2px);
-    border-color: var(--primary);
-}
 
 .btn-outline {
     background: transparent;
@@ -251,9 +254,14 @@ a {
     padding: 6px 0;
 }
 
-.nav-link:hover,
 .nav-link.active {
     color: var(--primary);
+}
+
+@media (hover: hover) {
+    .nav-link:hover {
+        color: var(--primary);
+    }
 }
 
 .nav-link::after {
@@ -267,9 +275,14 @@ a {
     transition: var(--transition);
 }
 
-.nav-link:hover::after,
 .nav-link.active::after {
     width: 100%;
+}
+
+@media (hover: hover) {
+    .nav-link:hover::after {
+        width: 100%;
+    }
 }
 
 .mobile-nav-toggle {
@@ -290,11 +303,11 @@ a {
 
 section {
     position: relative;
-    padding: 110px 0;
+    padding: 70px 0;
 }
 
 .section-header {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     max-width: 720px;
 }
 
@@ -579,14 +592,16 @@ section {
     transition: var(--transition);
 }
 
-.tech-stat-card:hover,
-.value-item:hover,
-.metric-card:hover,
-.process-card:hover,
-.contact-card-item:hover {
-    border-color: var(--panel-border-strong);
-    box-shadow: 0 0 24px rgba(var(--primary-rgb), 0.15);
-    background: rgba(17, 24, 39, 0.82);
+@media (hover: hover) {
+    .tech-stat-card:hover,
+    .value-item:hover,
+    .metric-card:hover,
+    .process-card:hover,
+    .contact-card-item:hover {
+        border-color: var(--panel-border-strong);
+        box-shadow: 0 0 24px rgba(var(--primary-rgb), 0.15);
+        background: rgba(17, 24, 39, 0.82);
+    }
 }
 
 .tech-stat-card .card-icon,
@@ -705,7 +720,7 @@ section {
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .portfolio-pill {
@@ -732,10 +747,12 @@ section {
     transition: var(--transition);
 }
 
-.product-card:hover {
-    border-color: var(--panel-border-strong);
-    box-shadow: 0 0 32px rgba(var(--primary-rgb), 0.18);
-    background: rgba(17, 24, 39, 0.82);
+@media (hover: hover) {
+    .product-card:hover {
+        border-color: var(--panel-border-strong);
+        box-shadow: 0 0 32px rgba(var(--primary-rgb), 0.18);
+        background: rgba(17, 24, 39, 0.82);
+    }
 }
 
 .product-gallery {
@@ -758,8 +775,10 @@ section {
     transition: transform 0.6s ease;
 }
 
-.product-card:hover .product-media img {
-    transform: scale(1.04);
+@media (hover: hover) {
+    .product-card:hover .product-media img {
+        transform: scale(1.04);
+    }
 }
 
 .product-overlay {
@@ -1093,6 +1112,18 @@ section {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 18px;
+    }
+
+    section {
+        padding: 45px 0;
+    }
+
+    .section-header {
+        margin-bottom: 24px;
+    }
+
     .navbar {
         height: 70px;
     }
