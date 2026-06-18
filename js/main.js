@@ -209,34 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.timeline({ defaults: { ease: 'power3.out', duration: 0.9 } })
-            .to('.hero-section .reveal-ready', {
-                opacity: 1,
-                stagger: 0.12
-            })
-            .from('.hero-card-wrapper', {
-                opacity: 0,
-                rotation: -3,
-                duration: 1.1,
-                ease: 'back.out(1.5)'
-            }, '-=0.9')
-            .from('.floating-chip', {
-                opacity: 0,
-                stagger: 0.12
-            }, '-=0.8');
 
-        gsap.utils.toArray('.showcase-panel, .tech-stat-card, .value-item, .portfolio-pill, .product-card, .process-card, .contact-card-item, .section-header .reveal-ready, .about-content .reveal-ready').forEach(item => {
-            gsap.to(item, {
-                scrollTrigger: {
-                    trigger: item,
-                    start: 'top 88%',
-                    toggleActions: 'play none none none'
-                },
-                opacity: 1,
-                duration: 0.8,
-                ease: 'power2.out'
-            });
-        });
 
         gsap.to('.orbit-one', {
             rotation: 360,
