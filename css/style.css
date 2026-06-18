@@ -592,17 +592,6 @@ section {
     transition: var(--transition);
 }
 
-@media (hover: hover) {
-    .tech-stat-card:hover,
-    .value-item:hover,
-    .metric-card:hover,
-    .process-card:hover,
-    .contact-card-item:hover {
-        border-color: var(--panel-border-strong);
-        box-shadow: 0 0 24px rgba(var(--primary-rgb), 0.15);
-        background: rgba(17, 24, 39, 0.82);
-    }
-}
 
 .tech-stat-card .card-icon,
 .value-icon,
@@ -747,13 +736,6 @@ section {
     transition: var(--transition);
 }
 
-@media (hover: hover) {
-    .product-card:hover {
-        border-color: var(--panel-border-strong);
-        box-shadow: 0 0 32px rgba(var(--primary-rgb), 0.18);
-        background: rgba(17, 24, 39, 0.82);
-    }
-}
 
 .product-gallery {
     position: relative;
@@ -775,11 +757,6 @@ section {
     transition: transform 0.6s ease;
 }
 
-@media (hover: hover) {
-    .product-card:hover .product-media img {
-        transform: scale(1.04);
-    }
-}
 
 .product-overlay {
     position: absolute;
@@ -1233,14 +1210,6 @@ section {
         padding-right: 20px;
     }
 
-    .tech-stat-card:hover, .tech-stat-card:active, .tech-stat-card:focus,
-    .value-item:hover, .value-item:active, .value-item:focus,
-    .metric-card:hover, .metric-card:active, .metric-card:focus,
-    .process-card:hover, .process-card:active, .process-card:focus,
-    .contact-card-item:hover, .contact-card-item:active, .contact-card-item:focus,
-    .product-card:hover, .product-card:active, .product-card:focus {
-        transform: none !important;
-    }
 
     .floating-chip {
         display: none;
