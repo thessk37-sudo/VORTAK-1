@@ -116,7 +116,7 @@ function createProductCard(product, index) {
                 </div>
             </div>
             <div class="product-note">${product.note}</div>
-            <a href="#contact" class="btn btn-outline btn-sm">Talk About Availability</a>
+            <a href="https://wa.me/919571122602" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Talk About Availability</a>
         </div>
     `;
 
