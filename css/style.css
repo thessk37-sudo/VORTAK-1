@@ -556,8 +556,8 @@ section {
 }
 
 .chip-bottom {
-    bottom: 10%;
-    left: -24px;
+    bottom: -18px;
+    left: -10px;
 }
 
 .about-grid {
@@ -905,6 +905,33 @@ section {
     border: 1px solid rgba(var(--secondary-rgb), 0.16);
     color: #ffd6a7;
     font-size: 0.82rem;
+}
+
+/* Horizontal layout for lone last product card when odd-indexed */
+@media (min-width: 769px) {
+    .product-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 0.85fr 1.15fr;
+        align-items: stretch;
+    }
+    
+    .product-card:last-child:nth-child(odd) .product-gallery {
+        padding: 18px 0 18px 18px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .product-card:last-child:nth-child(odd) .product-media {
+        aspect-ratio: auto;
+        flex: 1;
+        min-height: 300px;
+    }
+    
+    .product-card:last-child:nth-child(odd) .product-details {
+        padding: 24px 28px 24px 24px;
+        justify-content: center;
+    }
 }
 
 .process-grid {

@@ -68,6 +68,17 @@ const products = [
         applications: 'Footwear, cables, covers, automotive components',
         benefits: 'Suitable where surface toughness and flexible recovery are both critical.',
         note: 'Premium-grade positioning with a clean single-image presentation.'
+    },
+    {
+        name: 'ABS Lumps',
+        shortLabel: 'Tough Recyclable Polymer',
+        category: 'Polymer',
+        images: ['Images/Abs Lumps/abs Lumps.jpeg'],
+        description: 'Post-industrial ABS lumps sourced from clean manufacturing purges. Retains original material properties like high impact resistance, rigidity, and dimensional stability, making it excellent feedstock for compounding and regrinding.',
+        specs: ['High Impact Strength', 'Excellent Rigidity', 'Post-Industrial Cleanliness'],
+        applications: 'Shredding & pelletizing, automotive interior components, electronics enclosures, household consumer plastics',
+        benefits: 'Provides a highly cost-effective alternative to virgin ABS resins while supporting circular manufacturing workflows.',
+        note: 'Direct post-industrial sourcing ensures minimal contamination and reliable reprocessing behavior.'
     }
 ];
 
