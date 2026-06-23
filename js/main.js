@@ -36,18 +36,19 @@ const products = [
         name: 'PVB Roll (Film Sheets)',
         shortLabel: 'Recovered Film Roll',
         category: 'Recycled',
-        images: ['Images/Pvb roll/Pvb roll 1.jpeg', 'Images/Pvb roll/Pvb roll 2.jpeg'],
+        images: ['Images/Pvb roll/Pvb roll.jpeg'],
         description: 'Recovered PVB film rolls from laminated glass streams, curated for reuse in sound, adhesive, and backing-sheet applications.',
         specs: ['Elastic recovery', 'Reusable sheet form', 'Circular sourcing'],
         applications: 'Adhesives, carpets, barriers, solar backsheet reuse',
         benefits: 'Cost-aware recycled option with strong reuse potential.',
-        note: 'Multiple gallery images included to show actual roll condition and texture.'
+        note: 'Single gallery image included to show actual roll condition and texture.'
     },
     {
-        name: 'Rubber Compound',
+        name: 'Rubber Compound Purge',
         shortLabel: 'Custom Elastomer Blend',
         category: 'Elastomer',
         images: [
+            'Images/Rubber compound/Rubber compound.jpeg',
             'Images/Rubber compound/Rubber compound 1.jpeg',
             'Images/Rubber compound/Rubber compound 2.jpeg',
             'Images/Rubber compound/Rubber compound 3.jpeg'
@@ -56,7 +57,7 @@ const products = [
         specs: ['Custom hardness', 'Weather resistance', 'Reprocessed options'],
         applications: 'Gaskets, engine mounts, seals, anti-vibration parts',
         benefits: 'Tailored compound presentation for varied industrial requirements.',
-        note: 'Three actual gallery images are wired in to highlight real material variation.'
+        note: 'Four actual gallery images are wired in to highlight real material variation.'
     },
     {
         name: 'TPU (Thermoplastic Polyurethane)',
